@@ -390,13 +390,13 @@ header .mobile-menu a:hover {
     overflow: hidden;
 }
 
-.about .infos .social-media .icon .in {
+.about .infos .social-media .icon .i {
     position: relative;
     transition: var(--transition);
     z-index: 3;
 }
 
-.about .infos .social-media .icon:hover .in {
+.about .infos .social-media .icon:hover .i {
     color: #fff;
     transform: rotateY(360deg);
 }
