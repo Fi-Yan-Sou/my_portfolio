@@ -395,13 +395,13 @@ header .mobile-menu a:hover {
     overflow: hidden;
 }
 
-.about .infos .social-media .icon .i {
+.about .infos .social-media .icon i {
     position: relative;
     transition: var(--transition);
     z-index: 3;
 }
 
-.about .infos .social-media .icon:hover .i {
+.about .infos .social-media .icon:hover i {
     color: #fff;
     transform: rotateY(360deg);
 }
@@ -413,7 +413,7 @@ header .mobile-menu a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    transition: .5s;
+    transition: var(--transition);
     z-index: 2;
 }
 
