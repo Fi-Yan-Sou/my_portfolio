@@ -374,6 +374,11 @@ header .mobile-menu a:hover {
     border: 5px solid var(--primary-color);
 }
 
+.about .infos .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
 .about .infos .social-media .icon {
     width: 30px;
     height: 30px;
