@@ -357,12 +357,13 @@ header .mobile-menu a:hover {
 
 .about .infos .job-title {
     color: var(--primary-color);
-    font-size: 50px;
+    font-size: 46px;
     font-weight: 900;
 }
 
 .about .infos p {
     color: #ddd;
+    text-align: justify;
     line-height: var(--line-height);
 }
 
