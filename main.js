@@ -10,6 +10,8 @@ let bar = document.querySelector(".bar");
 
 let mobileMenu = document.querySelector(".mobile-menu");
 
+let closeButton = document.querySelector(".close-button");
+
 // Show Progress
 window.onscroll = function() {
 
@@ -63,7 +65,7 @@ bar.onclick = function() {
 
 document.onclick = function(e) {
 
-    if (!e.target.closest(".bar")) {
+    if (!e.target.closest(".mobile-menu") && !e.target.closest(".bar")) {
 
         bar.classList.remove("complete");
 
@@ -72,3 +74,11 @@ document.onclick = function(e) {
     }
 
 }
+
+closeButton.onclick = function () {
+
+    bar.classList.remove("complete");
+    
+    mobileMenu.classList.remove("show");
+
+};
