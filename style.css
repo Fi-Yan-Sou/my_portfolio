@@ -121,7 +121,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -130,7 +130,6 @@ html {
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--primary-color);
-    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -207,6 +206,7 @@ font-family: "Work Sans", sans-serif;
 header {
     background-image: linear-gradient(to right, #10012e 70%, var(--secondary-color));
     padding: 15px;
+    position: relative;
 }
 
 header .container {
@@ -293,37 +293,47 @@ header .bar.complete span:nth-child(2) {
 }
 
 header .mobile-menu {
-    width: 250px;
-    background-color: #fafafa;
-    display: none;
-    position: absolute;
-    right: 0;
-    bottom: -335px;
+    width: 220px;
+    height: 100vh;
+    background-color: var(--primary-color);
+    padding: 50px 20px;
+    position: fixed;
+    right: -220px;
+    top: 0;
     z-index: 1000;
+    transition: var(--transition);
 }
 
 header .mobile-menu.show {
-    display: block;
+    right: 0;
+}
+
+header .mobile-menu span {
+    width: 30px;
+    height: 30px;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #eee;
+    border-radius: 50%;
+    margin-left: auto;
+    cursor: pointer;
 }
 
 header .mobile-menu a {
-    color: black;
+    color: #eee;
     font-size: 18px;
     font-weight: bold;
     text-transform: capitalize;
     text-decoration: none;
+    padding: 25px 0 0;
     display: block;
-    padding: 15px 10px;
     transition: var(--transition);
 }
 
-header .mobile-menu a:not(:last-child) {
-    border-bottom: 1px solid #ddd;
-}
-
 header .mobile-menu a:hover {
-    color: var(--primary-color);
-    padding-left: 20px;
+    padding-left: 10px;
 }
 /* End Header */
 
